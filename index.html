@@ -1,0 +1,31 @@
+---
+layout: default
+title: Extra Flags Gallery
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Extra Flags Gallery</title>
+  <link rel="stylesheet" type="text/css" href="README.css" />
+</head>
+<body>
+
+  <h1>Extra Flags Gallery</h1>
+  <p>A specialized extension repository for non-standard, historical, controversial, and alternate history flag designs in 512×512 SVG format.</p>
+
+  <h2>Flags</h2>
+
+  <div class="container">
+    {% for flag in site.data.flags %}
+      <div id="flag-{{ flag.code }}">
+        <code title="{{ flag.code }}">{{ flag.code }}</code>
+        <img src="flags/{{ flag.code }}.svg" alt="{{ flag.name }}"/>
+        <p>{{ flag.name }}</p>
+      </div>
+    {% endfor %}
+  </div>
+
+</body>
+</html>
