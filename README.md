@@ -2,7 +2,7 @@
 layout: default
 title: Extra Flags Gallery
 ---
-<link rel="stylesheet" type="text/css" href="gallery.css" />
+<link rel="stylesheet" type="text/css" href="README.css" />
 
 <h1>Extra Flags Gallery</h1>
 
