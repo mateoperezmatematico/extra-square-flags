@@ -1,4 +1,6 @@
-  - code: yu-it
-    name: "Italian Socialist Republic (Yugoslavia)"
   - code: ddr
     name: "East Germany"
+  - code: yu-al
+    name: "Albanian People's Republic (Yugoslavia)"  
+  - code: yu-it
+    name: "Italian Socialist Republic (Yugoslavia)"
