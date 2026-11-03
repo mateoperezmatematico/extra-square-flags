@@ -9,13 +9,65 @@ title: Extra Flags Gallery
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Extra Flags Gallery</title>
   <link rel="stylesheet" type="text/css" href="style.css" />
- <style>
-    /* Grid Container Sizing */
+  <style>
+    /* Global Page Styling */
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 24px 16px;
+      color: #24292f;
+    }
+
+    /* Top Navigation / Repository Link Styling */
+    body > a:first-child,
+    .header-link {
+      display: inline-block;
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #0969da;
+      text-decoration: none;
+      margin-bottom: 16px;
+    }
+
+    body > a:first-child:hover,
+    .header-link:hover {
+      text-decoration: underline;
+    }
+
+    /* Teal Background Title Banner */
+    h1 {
+      background-color: #e6f4f1;
+      color: #0d5c58;
+      padding: 12px 20px;
+      border-radius: 8px;
+      border-left: 5px solid #14b8a6;
+      margin-top: 0;
+      margin-bottom: 12px;
+      font-size: 1.75rem;
+    }
+
+    /* Subtitle & Description */
+    h1 + p {
+      font-size: 0.95rem;
+      color: #57606a;
+      margin-bottom: 24px;
+    }
+
+    /* Section Headers */
+    h2 {
+      font-size: 1.25rem;
+      border-bottom: 1px solid #d0d7de;
+      padding-bottom: 6px;
+      margin-top: 24px;
+      margin-bottom: 16px;
+    }
+
+    /* Grid Container */
     .container {
       display: flex;
       flex-wrap: wrap;
       gap: 16px;
-      margin-top: 20px;
     }
 
     /* Individual Flag Cards */
@@ -36,7 +88,7 @@ title: Extra Flags Gallery
     .container > div:hover {
       transform: translateY(-2px);
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-      border-color: #0969da;
+      border-color: #14b8a6;
     }
 
     /* SVG Flag Image Styling */
@@ -45,7 +97,7 @@ title: Extra Flags Gallery
       height: auto;
       aspect-ratio: 1 / 1;
       border-radius: 4px;
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15); /* Adds contrast for light/white flag borders */
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
       margin: 6px 0;
     }
 
@@ -71,7 +123,6 @@ title: Extra Flags Gallery
     }
   </style>
 </head>
-
   <h1>Extra Flags Gallery</h1>
   <p>A specialized extension repository for non-standard, historical, controversial, and alternate history flag designs in 512×512 SVG format.</p>
 
