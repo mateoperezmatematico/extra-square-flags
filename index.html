@@ -10,14 +10,66 @@ title: Extra Flags Gallery
   <title>Extra Flags Gallery</title>
   <link rel="stylesheet" type="text/css" href="style.css" />
   <style>
-  .container > div {
-    max-width: 120px; /* Constrains the item width */
-  }
-  .container img {
-    width: 100%;       /* Forces SVG to fit the card */
-    height: auto;
-  }
-</style>
+    /* Grid Container Sizing */
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-top: 20px;
+    }
+
+    /* Individual Flag Cards */
+    .container > div {
+      width: 120px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 12px 10px;
+      background: #ffffff;
+      border: 1px solid #e1e4e8;
+      border-radius: 8px;
+      transition: transform 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    }
+
+    /* Card Hover Effect */
+    .container > div:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      border-color: #0969da;
+    }
+
+    /* SVG Flag Image Styling */
+    .container img {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 1 / 1;
+      border-radius: 4px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15); /* Adds contrast for light/white flag borders */
+      margin: 6px 0;
+    }
+
+    /* Flag Code Label */
+    .container code {
+      font-size: 0.72rem;
+      background-color: #f6f8fa;
+      padding: 2px 6px;
+      border-radius: 4px;
+      border: 1px solid #d0d7de;
+      color: #57606a;
+    }
+
+    /* Flag Title Text */
+    .container p {
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: #24292f;
+      text-align: center;
+      line-height: 1.25;
+      margin: 4px 0 0 0;
+      word-break: break-word;
+    }
+  </style>
 </head>
 <body>
 
